@@ -49,13 +49,13 @@ External Oscilloscope
 
 ## Main Modification
 
-The original Red Pitaya moving average example uses a tag-controlled 1/2/3-tap structure.
+The original Red Pitaya moving average example uses a tag-controlled small-window moving average structure.
 
 This version modifies `moving_average.vhd` into a fixed 512-tap moving average filter.
 
 Main changes:
 
-1. Extended the original 3-tap structure to a fixed 512-tap filter.
+1. Extended the original small-window moving average structure to a fixed 512-tap filter.
 2. Increased the accumulator width from 14-bit to 26-bit to prevent overflow.
 3. Replaced direct summation with a rolling-sum implementation.
 4. Used a circular buffer to store the latest 512 ADC samples.
