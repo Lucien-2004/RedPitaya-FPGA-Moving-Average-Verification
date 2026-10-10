@@ -1,0 +1,16 @@
+*.jou
+*.log
+*.str
+*.tmp
+*.backup
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.srcs/
+*.xpr
+*.bit
+*.bin
+*.bit.bin
+.DS_Store
